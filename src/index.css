@@ -1,0 +1,189 @@
+* {
+  color: white;
+  font-family: 'Rajdhani', sans-serif;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Header */
+.navWeb {
+  height: 10vh;
+  background: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+.navWeb ul {
+  padding: 0;
+  margin-top: .5rem;
+  list-style: none;
+  display: flex;
+}
+a {
+  text-decoration: none
+}
+.webli {
+  padding: .75rem
+}
+.headerMiddle {
+  width: 8.5rem;
+  height: 5.95rem;
+}
+/* Home */
+.background {
+  background-image: radial-gradient(#0c001a, black, black);
+  height: 90vh;
+}
+.middleMain {
+  display: flex;
+  height: 90vh;
+   align-items: center;    
+   justify-content: center; 
+}
+.greyOrb {
+  background-image: radial-gradient(black, white, black);
+  height: 10rem;
+  width: 10rem;
+  border-radius: 20rem;
+}
+.rotatingOrb2 {
+  position: absolute;
+  animation: orbit 30s infinite linear;
+  background-image: radial-gradient(#45c7ff3d, #af7aff3d, #ff75953d);
+  height: 2rem;
+  width: 2rem;
+  border-radius: 20rem;
+  text-align: center;
+}
+.greyOrb3 {
+  position: absolute;
+  background-image: radial-gradient(#45c7ff3d, #af7aff3d, #ff75953d);
+  height: 7rem;
+  width: 7rem;
+  border-radius: 20rem;
+  text-align: center;
+}
+.centerOrb {
+  position: absolute;
+  background-image: radial-gradient(#45c7ff3d, #af7aff3d, #ff75953d);
+  height: 7rem;
+  width: 7rem;
+  border-radius: 20rem;
+  text-align: center;
+}
+.topDescription {
+  position: absolute;
+  top: 7rem;
+  width: 20rem;
+  text-align: center;
+}
+
+
+/* Portfolio */
+.grid {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
+
+  
+}
+.itemImage {
+  height: 13.5rem;
+  width: 20rem;
+}
+.grid-item {
+  margin: 4rem;
+  
+}
+
+/* Contact */
+.contactBackground {
+    background-image: radial-gradient(#0c001a, black, black);
+    display: flex;
+    height: 90vh;
+     align-items: center;    
+     justify-content: center; 
+}
+
+@media screen and (max-width: 700px) {
+  .greyOrb {
+    background-image: radial-gradient(black, white, black);
+    height: 7rem;
+    width: 7rem;
+    border-radius: 20rem;
+  }
+  .rotatingOrb2 {
+    position: absolute;
+    animation: orbit 30s infinite linear;
+    background-image: radial-gradient(#45c7ff3d, #af7aff3d, #ff75953d);
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 20rem;
+    text-align: center;
+  }
+  .greyOrb3 {
+    position: absolute;
+    background-image: radial-gradient(#45c7ff3d, #af7aff3d, #ff75953d);
+    height: 4rem;
+    width: 4rem;
+    border-radius: 20rem;
+    text-align: center;
+  }
+  .centerOrb {
+    position: absolute;
+    background-image: radial-gradient(#45c7ff3d, #af7aff3d, #ff75953d);
+    height: 4rem;
+    width: 4rem;
+    border-radius: 20rem;
+    text-align: center;
+  }
+}
+@keyframes orbit {
+  from {
+    transform: rotate(0deg) translateX(200px);
+  }
+  to {
+    transform: rotate(360deg) translateX(200px);
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .itemImage
+   {
+     height: 12.5rem;
+     width: 17.5rem;
+  }
+  .grid-item {
+     margin: 2rem;
+     
+  }
+}
+@media screen and (max-width: 1050px) {
+  .grid
+   {
+     grid-template-columns: auto;
+     grid-template-rows: auto auto auto;
+     
+  }
+  .itemImage
+   {
+     height: 10rem;
+     width: 15rem;
+  }
+  
+}
+
